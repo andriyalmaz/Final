@@ -21,15 +21,16 @@ class Example(QWidget):
         but4=QPushButton('4')
         but4.resize(250,170)  
         
+        ans1=QLabel('Відповідь номер один')
         ans1.setWordWrap(True)
         
-        ans2=QLabel('відповідь номер два')
+        ans2=QLabel('Відповідь номер два')
         ans2.setWordWrap(True)       
         
-        ans3=QLabel('відповідь номер три')
+        ans3=QLabel('Відповідь номер три')
         ans3.setWordWrap(True) 
         
-        ans4=QLabel('відповідь номер чотири') 
+        ans4=QLabel('Відповідь номер чотири') 
         ans4.setWordWrap(True)        
                 
         grid = QGridLayout()
