@@ -21,23 +21,22 @@ class Example(QWidget):
         but4=QPushButton('4')
         but4.resize(250,170)  
         
-        ans1=QLabel('Answer1sdg  sdfg  dfsg sdfg sdf sdh sdhh sdh ersdfg sh stysfd')
         ans1.setWordWrap(True)
         
-        ans2=QLabel('Answer1sdg  sdfg  dfsfg sh stysfd')
+        ans2=QLabel('відповідь номер два')
         ans2.setWordWrap(True)       
         
-        ans3=QLabel('Answer1sdg  sdfg  dfsg sdfg sdf sdh sdhh h stysfd')
+        ans3=QLabel('відповідь номер три')
         ans3.setWordWrap(True) 
         
-        ans4=QLabel('Answer1sdg  sdfg  dfsg sdfg sdf sdh sdhh sdhd') 
+        ans4=QLabel('відповідь номер чотири') 
         ans4.setWordWrap(True)        
                 
         grid = QGridLayout()
         
         grid.setSpacing(25)
         
-        que=QLabel('df kjdfgk d ;skdg h ljfgh alfhgklj adfg ')
+        que=QLabel('Головне питання ')
         que.setWordWrap(True)        
 
         grid.addWidget(que,0,1,2,2)
