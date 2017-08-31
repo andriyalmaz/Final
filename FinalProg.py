@@ -1,6 +1,5 @@
 import sys
 from PyQt5.QtWidgets import (QApplication, QWidget, QLabel, QPushButton, QGridLayout)
-from PyQt5 import QtCore
 n=0
 class Example(QWidget):
 
