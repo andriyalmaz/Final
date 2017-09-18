@@ -1,10 +1,8 @@
 import sys
 from PyQt5.QtWidgets import (QApplication, QWidget, QLabel, QPushButton, QGridLayout)
 n=0
+rez=0
 
-def incr(n):
-    n=n+5
-    
 class Example(QWidget):
 
     def __init__(self):
@@ -69,7 +67,12 @@ class Example(QWidget):
         self.show()
         
     def newQue(self):
+        global rez
         global n
+        sender=self.sender()
+        if sender.text()==str(lis[n+5]):
+            rez=rez+1
+        print (rez)
         n=n+6  
         if n<len (lis):
             self.que.setText(lis[n])
@@ -83,7 +86,7 @@ class Example(QWidget):
             self.but2.setParent(None)
             self.but3.setParent(None)
             self.but4.setParent(None)
-            self.ans1.setParent(None)
+            self.ans1.setText(str(rez))
             self.ans2.setParent(None)
             self.ans3.setParent(None)
             self.ans4.setParent(None)
@@ -94,6 +97,7 @@ if __name__ == '__main__':
     lis=[] 
     for line in f:
         lis.append(line)
+    lis = [line.rstrip() for line in lis]
     while n<len(lis):
         app = QApplication(sys.argv)
         ex = Example()
